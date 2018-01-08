@@ -1,5 +1,6 @@
 <ul *ngFor="let contact of contacts">
-  <li>
+  <li *ngIf="contact.firstName == 'Martin'">
     {{contact.firstName}}
+    {{contact.lastName}}
   </li>
 </ul>
