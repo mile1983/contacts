@@ -1,3 +1,5 @@
+<input type =  "text" name ="" [(ngModel)] = "searchTerm">
+
 
 <table class="table table">
     <thead>
@@ -8,10 +10,10 @@
         <th>Remove</th>
       </tr>
     </thead>
-    <tr *ngFor="let contact of contacts">
+    <tr *ngFor="let contact of contacts | filterByNames:searchTerm">
       <td>{{ contact.firstName }}</td>
       <td>{{ contact.lastName }}</td>
-      <td>{{ contact.email }}</td>
+      <td>{{ contact.email | uppercase }}</td>
       <td>
           <button
               class="btn btn-danger"
@@ -21,6 +23,3 @@
       </td>
     </tr>
   </table>
-
-  <input type =  "text" name ="" [(ngModel)] = "testModel">
-  <div>Input value: {{testModel}} </div>

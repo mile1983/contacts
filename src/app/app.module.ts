@@ -7,6 +7,7 @@ import { ContactsListComponent } from './components/contacts-list/contacts-list.
 import { LayoutComponent } from './components/layout/layout.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { FilterByNamesPipe } from './pipes/filter-by-names.pipe';
 
 const appRoutes: Routes = [
   { path: '', component: ContactsListComponent },
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
     LayoutComponent,
     NavbarComponent,
     MessagesComponent,
+    FilterByNamesPipe,
     
     
   ],
