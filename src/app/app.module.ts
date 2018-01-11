@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ContactsListComponent } from './contacts-list/contacts-list.component';
-import { LayoutComponent } from './layout/layout.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { ContactsListComponent } from './components/contacts-list/contacts-list.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
