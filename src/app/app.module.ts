@@ -8,6 +8,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FilterByNamesPipe } from './pipes/filter-by-names.pipe';
+import { ContactsService } from './services/contacts.service';
+
 
 const appRoutes: Routes = [
   { path: '', component: ContactsListComponent },
@@ -37,7 +39,9 @@ const appRoutes: Routes = [
       appRoutes
     )
   ],
-  providers: [],
+  providers: [
+    ContactsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
