@@ -7,7 +7,7 @@ export class ContactsService {
 
  }
 
- 
+
  public getContacts()
  {
    return [
@@ -32,5 +32,8 @@ export class ContactsService {
        email:     'martin@example.com'
      }
    ];
+ }
+ getMessage(){
+   return "Hello";
  }
 }
