@@ -13,7 +13,7 @@
     <tr *ngFor="let contact of contacts | filterByNames:searchTerm">
       <td>{{ contact.firstName }}</td>
       <td>{{ contact.lastName }}</td>
-      <td>{{ contact.email | uppercase }}</td>
+      <td>{{ contact.email | lowercase }}</td>
       <td>
           <button
               class="btn btn-danger"

@@ -41,7 +41,7 @@ export class ContactsListComponent implements OnInit {
     let index = this.contacts.indexOf(contact);
     this.contacts.splice(index,1);
     
-    // console.log(contact);
+    //console.log(contact);
 
    }
 
